@@ -143,8 +143,7 @@ class TradingGraph:
         count = 0
         while queue:
             count += 1
-            current, parent = queue.popleft()
-            # print("parent", parent)
+            current, parent = queue.popleft()            
             if current == start and count > 1:
                 # Cycle detected, reconstruct the cycle
                 cycle = []
